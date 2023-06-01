@@ -5,5 +5,5 @@ for digit1 in range(10):
         if digit1 == 8 and digit2 == 9:
             print("{:d}{:d}".format(digit1, digit2), end="")
         else:
-            print("{:d}{:d}".format(digit 1, digit2), end=", ")
+            print("{:d}{:d}".format(digit1, digit2), end=", ")
 print()
