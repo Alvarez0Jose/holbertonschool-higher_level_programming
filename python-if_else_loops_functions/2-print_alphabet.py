@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 output = ''
 for i in range(ord('a'), ord('z')+1):
-    output += "{}"
+    output += chr(i)
 
-print(output.format(*[char(i) for i in range(ord('a'), ord('z')+1)]))
+print(output, end='')
