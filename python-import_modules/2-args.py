@@ -9,7 +9,7 @@ if __name__ == "__main__":
     if args_count == 0:
         print("{} arguments.".format(args_count))
     elif args_count == 1:
-        print("{} arguments:".format(args_count), end+"\n")
+        print("{} arguments:".format(args_count), end="\n")
         print(f"{args_count}:", "".join(args), end="\n")
     else:
         print(f"{args_count} arguments:", end="\n")
