@@ -1,15 +1,18 @@
 #!/usr/bin/python3
 
-def new_in_line(my_list, idx, element):
+def new_in_list(my_list, idx, element):
+
     if my_list is None:
         return
 
-    NewList = my_list.copy()
+    New_List = my_list.copy()
 
     if idx < 0:
-        return NewList
-    elif idx >= len(NewList):
-        return NewList
+        return New_List
+
+    elif idx >= len(New_List):
+        return New_List
+
     else:
-        NewList[idx] = element
-        return NewList
+        New_List[idx] = element
+        return New_List
