@@ -2,20 +2,17 @@
 
 def square_matrix_simple(matrix=[]):
 
-    if matrix is None:
-        return
-
-    if len(matrix) == 0:
-        return
+    if matrix is None or len(matrix) == 0:
+        return None
 
     NewMatrix = []
 
-    for i in matrix:
-        list = []
+    for row in matrix:
+        NewRow = []
 
-        for dgt in i:
-            list.append(dgt ** 2)
+        for digit in row:
+            NewRow.append(digit ** 2)
 
-        NewMatrix.append(list)
+        NewMatrix.append(NewRow)
 
-        return NewMatrix
+    return NewMatrix
