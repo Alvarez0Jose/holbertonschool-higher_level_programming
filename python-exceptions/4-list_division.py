@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-def list_division(,y_list_1, my_list_2, list_length):
+def list_division(my_list_1, my_list_2, list_length):
     NewList = []
 
     for a in range(list_length):
