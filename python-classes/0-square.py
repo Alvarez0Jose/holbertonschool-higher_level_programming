@@ -1,9 +1,12 @@
 #!/usr/bin/python3
+"""
+This script defines a Square class.
+"""
 
-# This script defines a Square class.
 
 class Square:
 
-    # Here we're creating an empty class.
-
+    """
+     Here we're creating an empty class.
+    """
     pass
