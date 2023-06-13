@@ -14,11 +14,16 @@ class Square:
         """
         creating the first method
         """
-            self.__size = size
+        self.__size = size
+
+    def area(self):
+        """
+        Area of the square
+        """
+        return self.__size ** 2
 
     @property
     def size(self):
-
         """
         retrieves the size of the square
         """
@@ -26,7 +31,6 @@ class Square:
 
     @size.setter
     def size(self, value):
-
         """
         Sets size of the value
         """
@@ -35,9 +39,3 @@ class Square:
         elif value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
-
-    def area(self):
-        """
-        Area of the square
-        """
-        return self.__size ** 2
