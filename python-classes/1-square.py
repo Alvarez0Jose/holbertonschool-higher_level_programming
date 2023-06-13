@@ -1,17 +1,17 @@
 #!/usr/bin/python3
 
 
-    """
-    This script creates a class with a private instance of size
+"""
+This script creates a class with a private instance of size
 
-    """
+"""
+
 
 class Square:
 
-
-    def __init__(__size):
-
+    def __init__(self, size):
         """
         Here we defines size as a private attribute
 
         """
+        self.__size = size
