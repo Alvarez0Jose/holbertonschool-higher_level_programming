@@ -8,6 +8,9 @@ This script creates a class with a private instance of size
 
 
 class Square:
+    """
+    This class is for a Square.
+    """
 
     def __init__(self, size):
         """
