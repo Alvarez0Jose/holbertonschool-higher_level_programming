@@ -8,7 +8,6 @@ This script creates a class for square
 
 
 class Square:
-
     """
     This class represents the square
     """
