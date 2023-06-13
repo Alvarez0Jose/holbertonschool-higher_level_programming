@@ -14,7 +14,7 @@ class Square:
         """
         creating the first method
         """
-            self.size = size
+            self.__size = size
 
     @property
     def size(self):
