@@ -15,10 +15,6 @@ class Square:
     def __init__(self, size=0):
         """
         Here we're creating the first method with size
-
-        Raises:
-        TypeError: if size is not integer.
-        ValueError: if size < 0
         """
 
         if not isinstance(size, int):
