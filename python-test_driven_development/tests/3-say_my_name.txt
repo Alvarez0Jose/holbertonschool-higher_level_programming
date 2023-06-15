@@ -1,0 +1,28 @@
+The Test for say_my_name function
+---------------------------
+
+Prints a string with the using first_name and last_name if person has a last name
+
+Parameters:
+    first_name (str): The first name.
+    last_name (str, optional): The last name. If person has no last name leave blank.
+
+Raises:
+    TypeError: If `first_name` or `last_name` is not a string.
+
+Examples:
+    >>> say_my_name("Jose", "Alvarez")
+    My name is Jose Alvarez
+
+    >>> say_my_name("Alejandro")
+    My name is Alejandro
+
+    >>> say_my_name(123, "Suarez")
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
+
+    >>> say_my_name("Amanda", 456)
+    Traceback (most recent call last):
+    ...
+    TypeError: last_name must be a string
