@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
 Prints the text with new lines
 """
