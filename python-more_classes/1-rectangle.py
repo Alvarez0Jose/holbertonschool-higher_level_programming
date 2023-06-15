@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Module: 1-Rectangle"""
 """
 Creating a Rectangle class
 """
