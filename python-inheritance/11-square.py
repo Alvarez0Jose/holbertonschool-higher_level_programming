@@ -83,3 +83,6 @@ class Square(Rectangle):
         Method to aquire the area of a Square
         """
         return self.__height * self.__width
+
+    def __str__(self):
+        return "f[Square] {self.__width/}{self.__height}"
