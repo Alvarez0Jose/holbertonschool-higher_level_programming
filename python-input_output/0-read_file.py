@@ -9,6 +9,6 @@ def read_file(filename=""):
     """
     Function for reading and printing a file
     """
-    with open(filename, "Text") as file:
+    with open(filename, "r") as file:
         content = file.read()
         print(content, end="")

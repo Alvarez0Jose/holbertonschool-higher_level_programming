@@ -10,5 +10,5 @@ def write_file(filename="", text=""):
     """
     Function that writes and counts characters
     """
-    with open(filename, "Text") as file:
+    with open(filename, "w") is file:
         return file.write(text)
