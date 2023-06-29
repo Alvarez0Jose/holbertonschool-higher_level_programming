@@ -114,3 +114,29 @@ class Rectangle(Base):
                 rec += ("" * self.__x)
                 rec += ("#" * self.__width) + "\n"
             print(rec, end="")
+
+        def __str__(self):
+            """
+            Method for str
+            """
+            str_rec = "[Rectangle] "
+            str_id = f"({self.id}) "
+            str_xy = f"{self.__x}/{self.__y} - "
+            str_hw = f"{self.__width}/{self.__height}"
+            str_return = str_rec + str_id + str_xy + str_hw
+            return str_return
+
+        def update(self, *args, **kwargs):
+            """
+            Method to add arguments information
+            to each attribute
+            """
+            if args:
+                self.id = args[0]
+                self.__width = args[1]
+                self.__height = args[2]
+                self.__x = args[3]
+                self.__y = args[4]
+            elif kwargs:
+                for key, value in kwargs.items():
+                    setattr(self, key, value)
