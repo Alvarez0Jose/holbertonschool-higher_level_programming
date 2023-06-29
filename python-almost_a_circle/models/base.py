@@ -3,6 +3,8 @@
 Module creates a class named Base
 """
 
+import json
+
 
 class Base:
     """
@@ -30,3 +32,18 @@ class Base:
             else:
                 Jstring = json.dumps(list_dictionaries)
         return Jstring
+
+    def save_to_file(cls, list_objs):
+        """
+        Method to save a file
+        """
+        filename = "{}.json".format(cls.__name__)
+        list_dic = []
+
+        if list_objs is not None:
+            list_dic = [obj.to_dictionary() for obj in list_objs]
+
+            Jstring = cls.to_json_string(list_dic)
+
+            with open(filename, "w") as file:
+                file.write(Jstring)
