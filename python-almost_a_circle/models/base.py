@@ -19,3 +19,14 @@ class Base:
             self.id = Base.__nb_objects
         else:
             self.id = id
+
+    def to_json_string(list_dictionaries):
+        """
+        Json String Method
+        """
+        if isinstance(list_dictionaries, list):
+            if list_dictionaries is None or list_dictionaries == []:
+                return "[]"
+            else:
+                Jstring = json.dumps(list_dictionaries)
+        return Jstring
