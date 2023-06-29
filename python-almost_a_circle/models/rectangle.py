@@ -4,6 +4,7 @@ Module creates a Rectangle class that inherets form Base
 """
 
 from models.base import Base
+import sys
 
 
 class Rectangle(Base):
@@ -18,7 +19,6 @@ class Rectangle(Base):
             width
             height
         """
-        super().__init__(id)
 
         if type(width) is not int:
             raise TypeError("width must be an integer")
@@ -43,6 +43,8 @@ class Rectangle(Base):
         if y < 0:
             raise ValueError("y must be >= 0")
         self.y = y
+
+        super().__init__(id)
 
         @property
         def width(self):
