@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module creates a Rectangle class that inherets form Base
+Module creates a Rectangle class that inherets  Base
 """
 
 from models.base import Base
@@ -9,7 +9,7 @@ import sys
 
 class Rectangle(Base):
     """
-    Class Rectangle inheriting from Base
+    Class Rectangle inheriting  Base
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
