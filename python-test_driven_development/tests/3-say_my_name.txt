@@ -1,28 +1,54 @@
-The Test for say_my_name function
----------------------------
+The ``3-say_my_name`` module
+============================
 
-Prints a string with the using first_name and last_name if person has a last name
+Using ``say_my_name``
+---------------------
 
-Parameters:
-    first_name (str): The first name.
-    last_name (str, optional): The last name. If person has no last name leave blank.
+Importing function from the module:
 
-Raises:
-    TypeError: If `first_name` or `last_name` is not a string.
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
 
-Examples:
-    >>> say_my_name("Jose", "Alvarez")
-    My name is Jose Alvarez
+Passing first_name and last_name correctly
 
-    >>> say_my_name("Alejandro")
-    My name is Alejandro
+    >>> say_my_name("Betty", "Holberton")
+    My name is Betty Holberton
 
-    >>> say_my_name(123, "Suarez")
+Passing first_name and last_name correctly 2
+
+    >>> say_my_name("Luis")
+    My name is Luis
+
+Passing None as the last_name
+
+    >>> say_my_name("John", None)
     Traceback (most recent call last):
-    ...
+    	      ...
+    TypeError: last_name must be a string
+
+Passing None as the first_name
+
+    >>> say_my_name(None)
+    Traceback (most recent call last):
+    	      ...
     TypeError: first_name must be a string
 
-    >>> say_my_name("Amanda", 456)
+Passing a number as the first_name
+
+    >>> say_my_name(1)
     Traceback (most recent call last):
-    ...
+    	      ...
+    TypeError: first_name must be a string
+
+Passing a number as the last_name
+
+    >>> say_my_name("Betty", 0)
+    Traceback (most recent call last):
+    	      ...
     TypeError: last_name must be a string
+
+Missing two arguments
+
+    >>> say_my_name()
+    Traceback (most recent call last):
+             ...
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'
