@@ -1,3 +1,3 @@
 -- LISTING ALL TABLES
-
+-- Using SHOW    
 SHOW TABLES;
