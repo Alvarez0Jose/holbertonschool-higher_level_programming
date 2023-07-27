@@ -1,4 +1,4 @@
--- Import database dump to your sql
+-- Imports database dump to your sql
 SELECT tv_shows.title,
     tv_show_genres.genre_id
 FROM tv_shows

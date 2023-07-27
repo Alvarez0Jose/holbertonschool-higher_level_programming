@@ -1,4 +1,4 @@
--- Script that lists all cities in database
+-- Script that list all cities in database
 SELECT cities.id, cities.name, states.name
 FROM cities
 INNER JOIN states ON cities.state_id=state.id
