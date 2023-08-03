@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-'''
-script that prints all City objects from the database hbtn_0e_14_usa
-'''
+"""
+Script prints all City objects from the database
+"""
 
 
 from sqlalchemy import create_engine, orm
